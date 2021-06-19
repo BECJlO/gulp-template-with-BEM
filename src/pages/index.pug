@@ -1,0 +1,18 @@
+extends common/layout
+
+block content
+  main.main
+    h2 Title
+    include includes/index/banner
+    hr
+    p paragraph
+    img(src="img/forest.jpg")
+    ul.items
+        li.items__t
+        li.items__t
+        li.items1__t
+    //- и другие блоки 
+    +b.block
+        //- Блок с класом block по БЭМ
+        +e.element  
+            //- Елемент блока block с класом element
